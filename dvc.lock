@@ -20,6 +20,10 @@ stages:
       hash: md5
       md5: fd45282652a83e8a5d4071dc65d7f615
       size: 342860
+    - path: src/text_preprocessing.py
+      hash: md5
+      md5: ed0b9c3b0ff2d70215f4e58f517a46cf
+      size: 2533
     outs:
     - path: output/preprocessed_data.joblib
       hash: md5
@@ -36,16 +40,20 @@ stages:
       hash: md5
       md5: 563078c54837293e2e29f2d656bef41a
       size: 495220
+    - path: src/text_classification.py
+      hash: md5
+      md5: f5dda13fe528364f2bbb96439d9e4e8e
+      size: 3382
     outs:
     - path: output/accuracy_scores.png
       hash: md5
-      md5: 13344b32914536383b3d6277fbd71a80
-      size: 23884
+      md5: 7bc0c0b93760e2f16a296c26d4544a23
+      size: 24001
     - path: output/misclassified_msgs.txt
       hash: md5
-      md5: 677e4d242e4046673e17016d48f3071f
-      size: 80203
+      md5: 8e42ec2a92e6a6b386bce2d349ec08dd
+      size: 80253
     - path: output/model.joblib
       hash: md5
-      md5: 6cd55881833718b30ab2e5f059531e6f
-      size: 15065
+      md5: f70d41d4917a554a67bff1cb3e2fa7cd
+      size: 15225

@@ -9,6 +9,7 @@ stages:
     cmd: python src/text_preprocessing.py
     deps:
     - smsspamcollection/SMSSpamCollection
+    - src/text_preprocessing.py
     outs:
     - output/preprocessed_data.joblib
     - output/preprocessor.joblib
@@ -16,6 +17,7 @@ stages:
     cmd: python src/text_classification.py
     deps:
     - output/preprocessed_data.joblib
+    - src/text_classification.py
     outs:
     - output/accuracy_scores.png
     - output/misclassified_msgs.txt
