@@ -1,0 +1,2 @@
+dvc stage add -n preprocess -d smsspamcollection/SMSSpamCollection -o output/preprocessor.joblib -o output/preprocessed_data.joblib python src/text_preprocessing.py
+dvc stage add -n train -d output/preprocessed_data.joblib -o output/misclassified_msgs.txt -o output/model.joblib -o output/accuracy_scores.png python src/text_preprocessing.py
