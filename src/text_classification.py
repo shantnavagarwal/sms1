@@ -77,7 +77,6 @@ def main():
     file.close()
 
     print('\n############### Accuracy Scores ###############')
-    json.dump(pred_scores, open('output/accuracy.json', 'w', encoding='utf-8'))
     accuracy = pd.DataFrame.from_dict(pred_scores, orient='index', columns=['Accuracy Rate'])
     print('\n')
     print(accuracy)
@@ -92,6 +91,8 @@ def main():
 
     # Store "best" classifier
     dump(classifiers['Decision Tree'], 'output/model.joblib')
+    json.dump({"Accuracy": pred_scores["Decision Tree"]}, open('output/accuracy.json', 'w', encoding='utf-8'))
+
 
 if __name__ == "__main__":
     main()
