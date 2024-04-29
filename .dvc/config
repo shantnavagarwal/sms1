@@ -1,5 +1,2 @@
 [core]
     autostage = true
-    remote = mylocalremote
-['remote "mylocalremote"']
-    url = /Users/shantnavagarwal/Documents/projects/CS4295/remotedvc
