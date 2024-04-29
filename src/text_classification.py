@@ -24,7 +24,7 @@ def my_train_test_split(*datasets):
     '''
     Split dataset into training and test sets. We use a 70/30 split.
     '''
-    return train_test_split(*datasets, test_size=0.3, random_state=2)
+    return train_test_split(*datasets, test_size=0.3, random_state=4)
 
 def train_classifier(classifier, X_train, y_train):
     classifier.fit(X_train, y_train)
