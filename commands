@@ -2,3 +2,6 @@ dvc stage add -n preprocess -d smsspamcollection/SMSSpamCollection -o output/pre
 dvc stage add -n train -d output/preprocessed_data.joblib -o output/misclassified_msgs.txt -o output/model.joblib -o output/accuracy_scores.png python src/text_preprocessing.py
 
 dvc remote add -d mylocalremote /Users/shantnavagarwal/Documents/projects/CS4295/remotedvc
+
+
+dvc remote add --default myremote gdrive://1_jRNQy9F6MYKvXeMNgH0naA5mUjLNj86
